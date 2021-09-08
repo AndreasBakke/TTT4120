@@ -1,0 +1,26 @@
+signal1 = createSignal(1000);
+soundsc(signal1, 1000);
+pause(5);
+
+signal2 =createSignal(3000);
+soundsc(signal2, 3000);
+pause(5);
+
+signal3 = createSignal(12000);
+soundsc(signal3, 12000);
+pause (
+function signal = createSignal(Fs)
+    f_1 = conv(0.3, Fs);
+    N=4;
+    t= 0:1/Fs:N;
+    signal = sin(2*pi*f_1*t);
+end
+
+
+function signal = fixedSample(F_1)
+    Fs=8000;
+    f_1 = F_1/Fs;
+    N=4;
+    t=0:1/Fs:N;
+    signal = sin(2*pi*f_1*t);
+end
