@@ -1,0 +1,10 @@
+n = 1:256;
+subplot(3,1,1);
+stem(n, x);
+title('x[n]');
+subplot(3,1,2);
+stem(n,y);
+title('y[n]');
+
+r=xcorr(x,y);
+subpl
