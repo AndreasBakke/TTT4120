@@ -1,0 +1,7 @@
+n = 0:99;
+x = [];
+for i = 0:s
+    r =rand;
+    if r<0.5
+    
+end
