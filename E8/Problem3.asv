@@ -1,0 +1,15 @@
+% Pseudokode:
+% 1: hent inn lydfil
+% 2: finn koeffisienter for en AR(10) - prosess
+% 3: lage filter!
+
+xa = v{1};
+xe =v{2};
+xi = v{3};
+xo = v{4};
+xu = v{5};
+
+
+sound(xa,fs);
+pause(1);
+sound(xe,fs);
